@@ -88,7 +88,7 @@ int main(int ac, char **av)
 			
 			if (n_read == 1 || line[0] == '\n')
 			{
-				write(1, promt, 2);
+				write(1, promt, 5);
 				continue;
 			}
 			/* num of written commands */
