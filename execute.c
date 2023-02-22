@@ -148,7 +148,6 @@ char **execute_line(char *line, list_t **head, list_t **head_asign)
 	argv = malloc(sizeof(char *) * 2);
 	argv[0] = line;
 	argv[1] = NULL;
-	strcpy(argv[0], line);
 	/* status =  */execute(argv, head, head_asign);/* execute the line */
 	/* if (status != 0)
 		return (argv); */
