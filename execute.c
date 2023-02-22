@@ -145,9 +145,9 @@ char **execute_line(char *line, list_t **head, list_t **head_asign)
 	/* { */
 	/* argv = split_str(line , " "); *//* splite line */
 	strtok(line, " ");
-	argv = malloc(sizeof(char *) * 2);
+	argv = malloc(sizeof(char *) * 1);
 	argv[0] = malloc(sizeof(char) * (strlen(line) + 1));
-	argv[1] = NULL;
+	/* argv[1] = NULL; */
 	strcpy(argv[0], line);
 	/* status =  */execute(argv, head, head_asign);/* execute the line */
 	/* if (status != 0)
