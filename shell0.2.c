@@ -18,7 +18,7 @@ void _error(char *shell, char *arg, int numOforders)
 void print_prompt(int ac)
 {
 	if (isatty(STDIN_FILENO) && ac != 2)/* if we in interactive mode */
-		write(1, promt, 5); /* print the prompt */
+		write(1, promt, 4); /* print the prompt */
 }
 
 
@@ -88,7 +88,7 @@ int main(int ac, char **av)
 			
 			if (n_read == 1 || line[0] == '\n')
 			{
-				write(1, promt, 5);
+				write(1, promt, 4);
 				continue;
 			}
 			/* num of written commands */
