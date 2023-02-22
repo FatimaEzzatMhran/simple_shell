@@ -75,7 +75,7 @@ int main(int ac, char **av)
 	*/
 	/* else if (ac == 1)*/
 /*	{ */
-	signal(SIGINT, SIG_IGN);
+	signal(SIGINT,SIG_IGN);
 	print_prompt(ac);/* print the prompt */
 
 	while (1)
