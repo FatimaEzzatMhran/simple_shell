@@ -101,8 +101,8 @@ int main(int ac, char **av)
 			break;
 	}
 	/* } */
-	if (n_read == -1 && isatty(STDIN_FILENO)/*  && ac != 2 */)
-		printf("\n");/* if terminate without type anything */
+	/*if (n_read == -1 && isatty(STDIN_FILENO))*/
+		/*printf("\n");*//* if terminate without type anything */
 	free(arg);
 	free(line);
 	/* free_list(head);

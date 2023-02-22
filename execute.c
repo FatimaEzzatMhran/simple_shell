@@ -144,7 +144,7 @@ char **execute_line(char *line, list_t **head, list_t **head_asign)
 	/* if (separtor == -1) *//* if seprator */
 	/* { */
 	/* argv = split_str(line , " "); *//* splite line */
-	strtok(line, " ");
+	/*strtok(line, " ");*/
 	argv = malloc(sizeof(char *) * 2);
 	argv[0] = line;
 	argv[1] = NULL;
