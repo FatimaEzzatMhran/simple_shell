@@ -18,7 +18,7 @@ void _error(char *shell, char *arg, int numOforders)
 void print_prompt(int ac)
 {
 	if (isatty(STDIN_FILENO) && ac != 2)/* if we in interactive mode */
-		write(1, promt, 2); /* print the prompt */
+		write(1, promt, 5); /* print the prompt */
 }
 
 

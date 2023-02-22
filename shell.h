@@ -3,7 +3,7 @@
 
 
 
-#define promt "$ "
+#define promt "($) "
 
 #include <stdio.h>
 #include <unistd.h>
