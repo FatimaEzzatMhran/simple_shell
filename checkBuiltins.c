@@ -25,11 +25,6 @@ int checkBuiltins(char **av, char *buff, int count)
 			_cd(av, count);
 			return (0);
 		}
-		else if (_strcmp("help", av[0]) == 0 && _strlen(av[0]) == 4)
-		{
-			_help(av);
-			return (0);
-		}
 		else if (_strcmp("echo", av[0]) == 0 && _strlen(av[0]) == 4)
 		{
 			_echo(av);
